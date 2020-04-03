@@ -17,7 +17,7 @@
 <parameter name="Zip" value="69696"/>
 
 <Classes>
-<Class name="test.AddContactTest"/>
+<Classes name="test.AddContactTest"/>
 </Classes>
 
 </test>
