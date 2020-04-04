@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-TestingSuite" class="hide-methods passed suite-TestingSuite"> (hide)</a> <!-- hide-methods passed suite-TestingSuite -->
+                      <a href="#" panel-name="suite-TestingSuite" class="show-methods passed suite-TestingSuite"> (show)</a> <!-- show-methods passed suite-TestingSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-TestingSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-TestingSuite" title="test.AddContactTest" hash-for-method="AddingContact(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincol...)">AddingContact(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincol...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-TestingSuite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,6 +117,22 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-TestingSuite" class="panel TestingSuite">
+          <div class="suite-TestingSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">test.AddContactTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddingContact(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincol...)">
+                  </a> <!-- AddingContact(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincol...) -->
+                  <span class="method-name">AddingContact</span>
+                  <span class="parameters">(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincoln St, ring, California, 69696)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-TestingSuite-class-passed -->
         </div> <!-- panel TestingSuite -->
         <div panel-name="test-xml-TestingSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -112,7 +142,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;TestingSuite&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;TestingSuite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;AddingContact&quot;&gt;
     &lt;parameter name=&quot;Zip&quot; value=&quot;69696&quot;/&gt;
     &lt;parameter name=&quot;password&quot; value=&quot;abc123&quot;/&gt;
@@ -124,6 +154,9 @@
     &lt;parameter name=&quot;City&quot; value=&quot;ring&quot;/&gt;
     &lt;parameter name=&quot;email&quot; value=&quot;techfiosdemo@gmail.com&quot;/&gt;
     &lt;parameter name=&quot;Name&quot; value=&quot;Moon Thugga Thugga&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;test.AddContactTest&quot;/&gt;
+    &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- AddingContact --&gt;
 &lt;/suite&gt; &lt;!-- TestingSuite --&gt;
             </pre>
@@ -136,7 +169,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">AddingContact (0 classes)</span>
+                <span class="test-name">AddingContact (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,12 +195,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AddingContact')
+data.setCell(0, 2, 'test.AddContactTest')
+data.setCell(0, 3, 16979);
 window.suiteTableData['TestingSuite']= { tableData: data, tableDiv: 'times-div-TestingSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-TestingSuite">
               </div> <!-- times-div-TestingSuite -->
             </div> <!-- times-div -->
@@ -192,6 +229,12 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">test.AddContactTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">AddingContact(techfiosdemo@gmail.com, abc123, Moon Thugga Thugga, sony, doodoo@gmail.com, 678-383-198, 6980 Lincol...)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
