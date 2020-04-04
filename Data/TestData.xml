@@ -16,9 +16,12 @@
 <parameter name="State" value="California"/>
 <parameter name="Zip" value="69696"/>
 
-<Classes>
-<Classes name="test.AddContactTest"/>
-</Classes>
+<classes>
+
+<class name="test.AddContactTest"/>
+
+</classes>
+
 
 </test>
 </suite>

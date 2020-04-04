@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <parameter name="Zip" value="param-val-not-found"/>
+  <parameter name="password" value="param-val-not-found"/>
+  <parameter name="Company" value="param-val-not-found"/>
+  <parameter name="Email" value="param-val-not-found"/>
+  <parameter name="Address" value="param-val-not-found"/>
+  <parameter name="Phone" value="param-val-not-found"/>
+  <parameter name="State" value="param-val-not-found"/>
+  <parameter name="City" value="param-val-not-found"/>
+  <parameter name="email" value="param-val-not-found"/>
+  <parameter name="Name" value="param-val-not-found"/>
   <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="test.AddContactTest">
         <methods>
-          <include name="AddingContact"/>
+          <include name="AddingContact" invocation-numbers="0"/>
         </methods>
       </class> <!-- test.AddContactTest -->
     </classes>
